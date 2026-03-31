@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: [actions/checkout@v4](https://github.com)
+        uses: actions/checkout@v4
       
       - name: Install dependencies
         run: |
@@ -20,7 +20,7 @@ jobs:
           make
           
       - name: Upload Artifact
-        uses: [actions/upload-artifact@v4](https://github.com)
+        uses: actions/upload-artifact@v4
         with:
           name: liblouis-shared-library
           path: |
